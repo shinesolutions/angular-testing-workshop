@@ -5,7 +5,7 @@ import { UnannotatedService } from './unannotated.service';
 import { AnnoyingInitiationService } from './annoying-initiation.service';
 import { EmergencyService } from './emergency.service';
  
-fdescribe('DependencyService', () => {
+describe('DependencyService', () => {
   let service;
 
   beforeEach(() => {

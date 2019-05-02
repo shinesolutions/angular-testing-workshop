@@ -17,8 +17,8 @@ export class DependencyService {
     private annoyingService: AnnoyingInitiationService,
     private emergencyService: EmergencyService
   ) {
-    this.unannotatedValue = this.unannotatedService.value;
-    this.stubbedValue = this.annoyingService.getCombinedEmoji('🧑', '🏿');
+    // this.unannotatedValue = this.unannotatedService.value;
+    // this.stubbedValue = this.annoyingService.getCombinedEmoji('🧑', '🏿');
   }
 
   getRandomEmoji() {

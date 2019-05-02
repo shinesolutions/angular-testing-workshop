@@ -22,15 +22,39 @@ describe('HttpService', () => {
   });
 
   it('should make a request', () => {
-    service.makeRequest().subscribe();
-    http.expectOne('/foo');
   });
 
   it('should send feedback', () => {
-    service.sendFeedback('great!').subscribe();
+    const feedback = {
+      user: 'bender@planetexpress.com',
+      feedback: 'destroy all humans',
+      date: '1/1/3000'
+    }
+    service.sendFeedback(feedback).subscribe();
+  });
 
-    const details = http.expectOne('/feedback').request;
-    expect(details.method).toBe('POST');
+  it('should not send feedback if an email isn\'t supplied', () => {
+  });
+
+  it('it should send a date, in the format month/day', () => {
+  });
+
+  it('should need a jacket if the weather is cold', () => {
+  });
+
+  it('should need a jacket if the weather is rainy', () => {
+  });
+
+  it('should always need a jacket in Melbourne', () => {
+  });
+
+  it('should not need a jacket in all other cases', () => {
+  });
+
+  it('should be up', () => {
+  });
+
+  it('should be down', () => {
   });
 
   afterEach(() => {
